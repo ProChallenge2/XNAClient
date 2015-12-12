@@ -9,3 +9,14 @@ D:\coding\vcc projects\gameClient\gameClient\gameClient\bin\x86\Debug\Content\Ta
 D:\coding\vcc projects\gameClient\gameClient\gameClient\bin\x86\Debug\Content\Tile0.xnb
 D:\coding\vcc projects\gameClient\gameClient\gameClient\bin\x86\Debug\Content\Tile3.xnb
 D:\coding\vcc projects\gameClient\gameClient\gameClient\bin\x86\Debug\Content\Tile2.xnb
+D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile0.xnb
+D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile3.xnb
+D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile2.xnb
+D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\tank.xnb
+D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\gameClient.exe
+D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\gameClient.pdb
+D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\obj\x86\Debug\gameClient.csprojResolveAssemblyReference.cache
+D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\obj\x86\Debug\gameClient.exe
+D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\obj\x86\Debug\gameClient.pdb
+D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile1.xnb
