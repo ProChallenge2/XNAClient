@@ -8,6 +8,10 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using gameClient.ServerConnection;
+using gameClient.HelperObject;
+using Tank_Client;
+using System.Threading;
 
 namespace gameClient
 {
@@ -19,14 +23,25 @@ namespace gameClient
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         GraphicsDevice device;
+        Commiunicator communicator;
+        GameEngin gE;
 
         TileMap map;
         Texture2D t;
+        Texture2D backgroundTexture;
 
+        int screenWidth;
+        int screenHeight;
+
+        public static char[,] matrix = null ;
+        
         public GameScreen()
         {
+            
+            gE = new GameEngin();
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+           
         }
 
         /// <summary>
@@ -37,6 +52,10 @@ namespace gameClient
         /// </summary>
         protected override void Initialize()
         {
+
+            gE.sendJoinMessage();
+            setMatrix(gE.getMap());
+
             // TODO: Add your initialization logic here
             map = new TileMap();
             graphics.PreferredBackBufferWidth = 1000;
@@ -44,8 +63,6 @@ namespace gameClient
 
             graphics.ApplyChanges();
             Window.Title = "Game Client";
-
-
             base.Initialize();
         }
 
@@ -58,14 +75,17 @@ namespace gameClient
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             device = graphics.GraphicsDevice;
+
+            screenWidth = device.PresentationParameters.BackBufferWidth;
+            screenHeight = device.PresentationParameters.BackBufferHeight;
+
+            backgroundTexture = Content.Load<Texture2D>("backGround");
+
             Tile.Content = Content;
-            
             t = new Texture2D(GraphicsDevice, 1, 1);
             t.SetData<Color>( new Color[] { Color.White }); // fill the texture with white
 
-            char[,] matrix = { { '0', '0', '0', '>', '0', '0', '0', '0', '0', '0' }, { '0', '0', '0', '0', '0', '0', '0', '0', '0', '0' }, { '0', '0', '2', '0', '0', '0', '0', '0', '0', '0' }, { '0', '0', '3', '0', '0', '0', '0', '1', '0', '0' }, { '0', '0', '0', '0', '0', '0', '0', '0', '0', '0' }, { '0', '0', '0', '0', '0', '0', '0', '0', '0', '0' }, { '0', '0', '0', '0', '0', '0', '0', '0', '0', '0' }, { '0', '0', '0', '0', '0', '0', '0', '0', '0', '0' }, { '0', '0', '0', '0', '0', '0', '3', '3', '0', '0' }, { '0', '0', '0', '0', '0', '0', '0', '0', '3', '2' },};
             map.generate(matrix, 50);
-
           
             // TODO: use this.Content to load your game content here
         }
@@ -86,6 +106,7 @@ namespace gameClient
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
@@ -103,6 +124,8 @@ namespace gameClient
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
+
+           // DrawScenery();
 
             map.Drow(spriteBatch);
             DrowHorizontalLineList();
@@ -135,6 +158,11 @@ namespace gameClient
                 0);
         }
 
+        public static void setMatrix(char[,] grid) {
+            matrix = grid;
+        }
+
+
         public void DrowVericaltalLineList()
         {
             for (int x = 2; x < 12; x++) {
@@ -154,6 +182,13 @@ namespace gameClient
                      new Vector2(600,(x* 50)) //end of line
                 );
             }
+        }
+
+        private void DrawScenery()
+        {
+            Rectangle screenRectangle = new Rectangle(0, 0, screenWidth, screenHeight);
+            spriteBatch.Draw(backgroundTexture, screenRectangle, Color.White);
+
         }
     }
 }

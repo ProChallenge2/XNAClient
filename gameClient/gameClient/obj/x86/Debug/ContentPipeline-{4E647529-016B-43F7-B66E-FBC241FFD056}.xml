@@ -46,6 +46,15 @@
       <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile0.xnb</Output>
       <Time>2015-12-12T14:50:29.4699129+05:30</Time>
     </Item>
+    <Item>
+      <Source>backGround.jpg</Source>
+      <Name>backGround</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\backGround.xnb</Output>
+      <Time>2015-12-13T22:59:22.3001968+05:30</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{4E647529-016B-43F7-B66E-FBC241FFD056}</ContentProjectGUID>

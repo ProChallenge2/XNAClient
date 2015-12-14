@@ -72,11 +72,24 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beans\Brick.cs" />
+    <Compile Include="Beans\CoinPile.cs" />
+    <Compile Include="Beans\LifePacket.cs" />
+    <Compile Include="Beans\Stone.cs" />
+    <Compile Include="Beans\Treasure.cs" />
+    <Compile Include="Beans\Water.cs" />
+    <Compile Include="GameEngin.cs" />
+    <Compile Include="HelperObjects\Constant.cs" />
+    <Compile Include="Beans\ObjectHolder.cs" />
+    <Compile Include="HelperObjects\map.cs" />
+    <Compile Include="Players\Player.cs" />
+    <Compile Include="ServerConnection\Commiunicator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="GameScreen.cs" />
     <Compile Include="GameScreen\Tile.cs" />
     <Compile Include="GameScreen\TileMap.cs" />
+    <Compile Include="HelperObjects\parser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
