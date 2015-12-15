@@ -37,7 +37,7 @@ namespace gameClient
         public CollisionTile(String i, Rectangle newRectangle)
         {
 
-            if (i.Equals("<") || i.Equals(">") || i.Equals("^") || i.Equals("V"))
+            if (i.Equals("<") || i.Equals(">") || i.Equals("^") || i.Equals("v"))
             {
                 texture = Content.Load<Texture2D>("tank");
             }

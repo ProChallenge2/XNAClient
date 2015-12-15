@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile2.xnb</Output>
-      <Time>2015-12-12T14:09:21.4961649+05:30</Time>
+      <Time>2015-12-15T10:29:14.1659432+05:30</Time>
     </Item>
     <Item>
       <Source>tank.jpg</Source>
@@ -29,22 +29,13 @@
       <Time>2015-12-12T14:12:39.2720404+05:30</Time>
     </Item>
     <Item>
-      <Source>Tile1.png</Source>
-      <Name>Tile1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile1.xnb</Output>
-      <Time>2015-12-12T14:09:21.4961649+05:30</Time>
-    </Item>
-    <Item>
       <Source>Tile0.jpg</Source>
       <Name>Tile0</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile0.xnb</Output>
-      <Time>2015-12-12T14:50:29.4699129+05:30</Time>
+      <Time>2015-12-15T10:31:39.0240538+05:30</Time>
     </Item>
     <Item>
       <Source>backGround.jpg</Source>
@@ -54,6 +45,42 @@
       <Options>None</Options>
       <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\backGround.xnb</Output>
       <Time>2015-12-13T22:59:22.3001968+05:30</Time>
+    </Item>
+    <Item>
+      <Source>backGround2.jpg</Source>
+      <Name>backGround2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\backGround2.xnb</Output>
+      <Time>2015-12-14T10:31:47.1802528+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Tile1.jpg</Source>
+      <Name>Tile1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile1.xnb</Output>
+      <Time>2015-12-15T10:30:25.8301841+05:30</Time>
+    </Item>
+    <Item>
+      <Source>TileL.png</Source>
+      <Name>TileL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\TileL.xnb</Output>
+      <Time>2015-12-15T11:56:59.8497796+05:30</Time>
+    </Item>
+    <Item>
+      <Source>TileC.png</Source>
+      <Name>TileC</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\TileC.xnb</Output>
+      <Time>2015-12-15T11:57:53.5585989+05:30</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

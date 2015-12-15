@@ -56,6 +56,9 @@ namespace gameClient
             gE.sendJoinMessage();
             setMatrix(gE.getMap());
 
+            
+           
+           
             // TODO: Add your initialization logic here
             map = new TileMap();
             graphics.PreferredBackBufferWidth = 1000;
@@ -79,7 +82,7 @@ namespace gameClient
             screenWidth = device.PresentationParameters.BackBufferWidth;
             screenHeight = device.PresentationParameters.BackBufferHeight;
 
-            backgroundTexture = Content.Load<Texture2D>("backGround");
+            backgroundTexture = Content.Load<Texture2D>("backGround2");
 
             Tile.Content = Content;
             t = new Texture2D(GraphicsDevice, 1, 1);
@@ -107,10 +110,14 @@ namespace gameClient
         protected override void Update(GameTime gameTime)
         {
 
+           
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
+            ThreadPool.QueueUserWorkItem(state =>gE.getUpdates());
+            setMatrix(gE.getMap());
+            map.generate(matrix, 50);
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -125,9 +132,10 @@ namespace gameClient
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
 
-           // DrawScenery();
+            DrawScenery();
 
             map.Drow(spriteBatch);
+
             DrowHorizontalLineList();
             DrowVericaltalLineList();
 
@@ -159,6 +167,19 @@ namespace gameClient
         }
 
         public static void setMatrix(char[,] grid) {
+
+            Console.WriteLine("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL");
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("");
+                for (int j = 0; j < 10; j++)
+                {
+                    Console.Write(grid[i, j] + " ");
+                }
+            }
+            Console.WriteLine("");
+
             matrix = grid;
         }
 

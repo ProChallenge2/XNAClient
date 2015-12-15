@@ -65,6 +65,8 @@ namespace gameClient.ServerConnection
         */
         public void setGrid(char[,] gd)
         {
+
+            Console.WriteLine("Settinggggggggggggggggggggggggggggggggggg");
             grid = gd;
         }
 

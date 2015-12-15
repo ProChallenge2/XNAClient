@@ -13,6 +13,7 @@ namespace gameClient
 
        
         private static map  mp = new map();
+
         parser tokenizer= new parser(mp); 
    
 
@@ -29,5 +30,15 @@ namespace gameClient
             return mp.getGrid();
         }
 
+
+        public void getUpdates() {
+
+            Console.WriteLine("pppppppppppppppppppppppppppppp");
+            String s = Commiunicator.receiveData();
+            Console.WriteLine(s);
+
+            tokenizer.tokenizeMessage(s);
+        
+        }
     }
 }

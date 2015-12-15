@@ -16,7 +16,7 @@ namespace gameClient.ServerConnection
         private const String GAME_ALREADY_STARTED = "GAME_ALREADY_STARTED";
         
         private Player me;
-        private Player player;
+        private Player player = new Player();
         LifePacket lifePack = new LifePacket();
         CoinPile coinPile = new CoinPile();
         Treasure treasure = new Treasure();
@@ -54,6 +54,9 @@ namespace gameClient.ServerConnection
 
         public void tokenizeMessage(String msg)
         {
+            if(msg != null){
+
+            Console.WriteLine(msg);
             String[] reply = msg.Split('#');
 
             if (reply[0] == Constant.S2C_GAMESTARTED)
@@ -130,6 +133,8 @@ namespace gameClient.ServerConnection
                 }
                 else if (array[0] == "S")
                 {
+
+                    Console.WriteLine("22222222222222222222222222222222222222222222222222222222222222222");
                     String[] arrayNew = array[1].Split(';');
 
                     player.playerNumber = Int32.Parse(arrayNew[0].Substring(1));
@@ -192,13 +197,14 @@ namespace gameClient.ServerConnection
 
 
                 mp.setGrid(grid);
+
                 if (a & b)
                 {
                     mp.showGrid();
                 }
             }
-        
-        }
+         }
+      }
 
              public void playerDetails(String det,Player player)
         {
