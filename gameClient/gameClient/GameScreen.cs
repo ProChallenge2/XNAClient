@@ -32,6 +32,8 @@ namespace gameClient
 
         int screenWidth;
         int screenHeight;
+        parser Paser = new parser();
+        
 
         public static char[,] matrix = null ;
         
@@ -63,6 +65,7 @@ namespace gameClient
             gE.sendJoinMessage();
             Thread t1 = new Thread(new ThreadStart(gE.getUpdates));
             t1.Start();
+            //Paser.send_updates();
             setMatrix(gE.getMap());
 
 

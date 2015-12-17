@@ -69,6 +69,32 @@ namespace gameClient.ServerConnection
             Console.WriteLine("Settinggggggggggggggggggggggggggggggggggg");
             grid = gd;
         }
+        public int neighbour(int x, int y)
+        {
+            char[,] newGrid = null;
+            newGrid = getGrid();
+            if (x + 1 < 10)
+            {
+                if (newGrid[x + 1, y] == '0')
+                    return 0;
+            }
+            else if (x - 1 >= 0)
+            {
+                if (newGrid[x - 1, y] == '0')
+                    return 2;
+            }
+            else if (y + 1 < 10)
+            {
+                if (newGrid[x, y + 1] == '0')
+                    return 1;
+            }
+            else if (y - 1 >= 0)
+            {
+                if (newGrid[x, y - 1] == '0')
+                    return 3;
+            }
+            return -1;
+        }
 
         /*
          * this is to display grid in console

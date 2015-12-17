@@ -5,7 +5,10 @@ using System.Text;
 using gameClient.Players;
 using gameClient.Beans;
 using gameClient.HelperObject;
+using gameClient.ArtificialIntelligence;
 using Tank_Client.beans;
+using System.Timers;
+using Tank_Client;
 
 namespace gameClient.ServerConnection
 {
@@ -29,11 +32,18 @@ namespace gameClient.ServerConnection
         bool a = false;
         bool b = false;
 
-
+        Timer server_update_timer;
+        int update_interval = 1200;
+        AI ai;
+        Commiunicator com = new Commiunicator();
+        public bool state = false;
         public parser(map mp) {
             this.mp = mp;
-            grid = mp.getGrid(); 
+            grid = mp.getGrid();
+            ai = new AI(grid);
         }
+        public parser() 
+        { }
 
         public String jointoserver()
         {
@@ -211,43 +221,66 @@ namespace gameClient.ServerConnection
 
             String[] arNew = det.Split(';');
             grid[player.playerLocationY, player.playerLocationX] = '0';
-                
-            player.playerNumber = Int32.Parse(arNew[0].Substring(1));
-            String[] location = arNew[1].Split(',');
-            
-            player.playerLocationX = Int32.Parse(location[0]);
-            player.playerLocationY = Int32.Parse(location[1]);
 
-            player.direction = Int32.Parse(arNew[2]);
-
-            switch (player.direction)
+            if (Int32.Parse(arNew[0].Substring(1)) == 0)
             {
-                case 0:
-                    grid[player.playerLocationY, player.playerLocationX] = '^';
-                    break;
-                case 1:
-                    grid[player.playerLocationY, player.playerLocationX] = '>';
-                    break;
-                case 2:
-                    grid[player.playerLocationY, player.playerLocationX] = 'v';
-                    break;
-                case 3:
-                    grid[player.playerLocationY, player.playerLocationX] = '<';
-                    break;
+                player.playerNumber = 0;
+                String[] location = arNew[1].Split(',');
 
+                player.playerLocationX = Int32.Parse(location[0]);
+                player.playerLocationY = Int32.Parse(location[1]);
+
+                player.direction = Int32.Parse(arNew[2]);
+
+                switch (player.direction)
+                {
+                    case 0:
+                        grid[player.playerLocationY, player.playerLocationX] = '^';
+                        break;
+                    case 1:
+                        grid[player.playerLocationY, player.playerLocationX] = '>';
+                        break;
+                    case 2:
+                        grid[player.playerLocationY, player.playerLocationX] = 'v';
+                        break;
+                    case 3:
+                        grid[player.playerLocationY, player.playerLocationX] = '<';
+                        break;
+
+                }
+
+                if (arNew[3] == "0")
+                {
+                    player.Shot = false;
+                }
+                else
+                    player.Shot = true;
+
+                player.Health = Int32.Parse(arNew[4]);
+                player.Coins = Int32.Parse(arNew[5]);
+                player.Points = Int32.Parse(arNew[6]);
+
+                Console.WriteLine(player.playerNumber + "        " + player.Health + "        " + player.Coins + "         " + player.Points);
             }
-
-            if (arNew[3] == "0")
-            {
-                player.Shot = false;
-            }
-            else
-                player.Shot = true;
-
-            player.Health = Int32.Parse(arNew[4]);
-            player.Coins = Int32.Parse(arNew[5]);
-            player.Points = Int32.Parse(arNew[6]);
 
         }
+
+             public void send_updates()
+             {
+                 server_update_timer = new Timer(update_interval); // CHANGE THIS VALUE SLIGHTLY AND CHECK
+                 server_update_timer.Enabled = true;
+                 server_update_timer.AutoReset = true;
+                 server_update_timer.Elapsed += new ElapsedEventHandler(update_server_handler);
+                 GC.KeepAlive(server_update_timer);
+             }
+             private void update_server_handler(object o, ElapsedEventArgs e)
+             {
+                 Console.WriteLine("loaction x " + player.playerLocationX + " Location y " + player.playerLocationY);
+                 string s = ai.getNextMove(player.playerLocationX, player.playerLocationY);
+                 Console.WriteLine(s + "  //////////////###########");
+                 Commiunicator.sendData(s);
+                 Console.WriteLine("##############////////////////");
+
+             }
     }
 }
