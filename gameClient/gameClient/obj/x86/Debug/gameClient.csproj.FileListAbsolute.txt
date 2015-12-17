@@ -24,3 +24,18 @@ D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\De
 D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\backGround2.xnb
 D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\TileL.xnb
 D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\TileC.xnb
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile3.xnb
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\tank.xnb
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\backGround.xnb
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\backGround2.xnb
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile2.xnb
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile1.xnb
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile0.xnb
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\TileL.xnb
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\TileC.xnb
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\gameClient.exe
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\gameClient.pdb
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\obj\x86\Debug\gameClient.csprojResolveAssemblyReference.cache
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\obj\x86\Debug\gameClient.exe
+E:\Semester 4\elite\XNAClient\gameClient\gameClient\obj\x86\Debug\gameClient.pdb

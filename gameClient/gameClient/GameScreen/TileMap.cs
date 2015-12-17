@@ -47,6 +47,17 @@ namespace gameClient
 
                 }
             }
+
+            Console.WriteLine("wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww");
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("");
+                for (int j = 0; j < 10; j++)
+                {
+                    Console.Write(map[i, j] + " ");
+                }
+            }
+            Console.WriteLine("wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww");
         }
 
         public void Drow(SpriteBatch spritebatch)

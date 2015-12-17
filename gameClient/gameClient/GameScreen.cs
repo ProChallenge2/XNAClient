@@ -53,19 +53,19 @@ namespace gameClient
         protected override void Initialize()
         {
 
-            gE.sendJoinMessage();
-            setMatrix(gE.getMap());
-
-            
-           
-           
-            // TODO: Add your initialization logic here
+        
             map = new TileMap();
             graphics.PreferredBackBufferWidth = 1000;
             graphics.PreferredBackBufferHeight = 750;
-
             graphics.ApplyChanges();
             Window.Title = "Game Client";
+
+            gE.sendJoinMessage();
+            Thread t1 = new Thread(new ThreadStart(gE.getUpdates));
+            t1.Start();
+            setMatrix(gE.getMap());
+
+
             base.Initialize();
         }
 
@@ -87,8 +87,9 @@ namespace gameClient
             Tile.Content = Content;
             t = new Texture2D(GraphicsDevice, 1, 1);
             t.SetData<Color>( new Color[] { Color.White }); // fill the texture with white
-
+            Console.WriteLine("uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
             map.generate(matrix, 50);
+            Console.WriteLine("uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
           
             // TODO: use this.Content to load your game content here
         }
@@ -115,10 +116,12 @@ namespace gameClient
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            ThreadPool.QueueUserWorkItem(state =>gE.getUpdates());
+            //gE.getUpdates();
             setMatrix(gE.getMap());
+
+            Console.WriteLine("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
             map.generate(matrix, 50);
-            // TODO: Add your update logic here
+            Console.WriteLine("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
 
             base.Update(gameTime);
         }
@@ -133,9 +136,7 @@ namespace gameClient
             spriteBatch.Begin();
 
             DrawScenery();
-
             map.Drow(spriteBatch);
-
             DrowHorizontalLineList();
             DrowVericaltalLineList();
 
@@ -167,19 +168,6 @@ namespace gameClient
         }
 
         public static void setMatrix(char[,] grid) {
-
-            Console.WriteLine("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL");
-
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine("");
-                for (int j = 0; j < 10; j++)
-                {
-                    Console.Write(grid[i, j] + " ");
-                }
-            }
-            Console.WriteLine("");
-
             matrix = grid;
         }
 

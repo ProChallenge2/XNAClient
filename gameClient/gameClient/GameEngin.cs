@@ -32,8 +32,6 @@ namespace gameClient
 
 
         public void getUpdates() {
-
-            Console.WriteLine("pppppppppppppppppppppppppppppp");
             String s = Commiunicator.receiveData();
             Console.WriteLine(s);
 

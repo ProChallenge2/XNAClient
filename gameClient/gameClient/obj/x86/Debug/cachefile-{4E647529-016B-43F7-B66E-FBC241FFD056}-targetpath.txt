@@ -1,9 +1,9 @@
 Content\Tile3.xnb
-Content\Tile2.xnb
 Content\tank.xnb
-Content\Tile0.xnb
 Content\backGround.xnb
 Content\backGround2.xnb
+Content\Tile2.xnb
 Content\Tile1.xnb
+Content\Tile0.xnb
 Content\TileL.xnb
 Content\TileC.xnb

@@ -1,2 +1,3 @@
 D:\coding\vcc projects\gameClient\gameClient\gameClientContent\obj\x86\Debug\gameClientContent.contentprojResolveAssemblyReference.cache
 D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClientContent\obj\x86\Debug\gameClientContent.contentprojResolveAssemblyReference.cache
+E:\Semester 4\elite\XNAClient\gameClient\gameClientContent\obj\x86\Debug\gameClientContent.contentprojResolveAssemblyReference.cache

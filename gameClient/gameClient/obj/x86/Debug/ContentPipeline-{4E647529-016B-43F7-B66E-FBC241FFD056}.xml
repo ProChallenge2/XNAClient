@@ -7,17 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile3.xnb</Output>
-      <Time>2015-12-12T14:09:21.4961649+05:30</Time>
-    </Item>
-    <Item>
-      <Source>Tile2.jpg</Source>
-      <Name>Tile2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile2.xnb</Output>
-      <Time>2015-12-15T10:29:14.1659432+05:30</Time>
+      <Output>E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile3.xnb</Output>
+      <Time>2015-12-12T14:09:22+05:30</Time>
     </Item>
     <Item>
       <Source>tank.jpg</Source>
@@ -25,17 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\tank.xnb</Output>
-      <Time>2015-12-12T14:12:39.2720404+05:30</Time>
-    </Item>
-    <Item>
-      <Source>Tile0.jpg</Source>
-      <Name>Tile0</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile0.xnb</Output>
-      <Time>2015-12-15T10:31:39.0240538+05:30</Time>
+      <Output>E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\tank.xnb</Output>
+      <Time>2015-12-12T14:12:40+05:30</Time>
     </Item>
     <Item>
       <Source>backGround.jpg</Source>
@@ -43,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\backGround.xnb</Output>
-      <Time>2015-12-13T22:59:22.3001968+05:30</Time>
+      <Output>E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\backGround.xnb</Output>
+      <Time>2015-12-13T22:59:24+05:30</Time>
     </Item>
     <Item>
       <Source>backGround2.jpg</Source>
@@ -52,8 +34,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\backGround2.xnb</Output>
-      <Time>2015-12-14T10:31:47.1802528+05:30</Time>
+      <Output>E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\backGround2.xnb</Output>
+      <Time>2015-12-14T10:31:48+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Tile2.jpg</Source>
+      <Name>Tile2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile2.xnb</Output>
+      <Time>2015-12-15T10:29:16+05:30</Time>
     </Item>
     <Item>
       <Source>Tile1.jpg</Source>
@@ -61,8 +52,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile1.xnb</Output>
-      <Time>2015-12-15T10:30:25.8301841+05:30</Time>
+      <Output>E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile1.xnb</Output>
+      <Time>2015-12-15T10:30:26+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Tile0.jpg</Source>
+      <Name>Tile0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\Tile0.xnb</Output>
+      <Time>2015-12-15T10:31:40+05:30</Time>
     </Item>
     <Item>
       <Source>TileL.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\TileL.xnb</Output>
-      <Time>2015-12-15T11:56:59.8497796+05:30</Time>
+      <Output>E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\TileL.xnb</Output>
+      <Time>2015-12-15T11:57:00+05:30</Time>
     </Item>
     <Item>
       <Source>TileC.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\TileC.xnb</Output>
-      <Time>2015-12-15T11:57:53.5585989+05:30</Time>
+      <Output>E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\TileC.xnb</Output>
+      <Time>2015-12-15T11:57:54+05:30</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -89,39 +89,39 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClientContent\</RootDirectory>
-      <LoggerRootDirectory>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\Semester 4\Pro challenge 2\new XNA\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>E:\Semester 4\elite\XNAClient\gameClient\gameClientContent\</RootDirectory>
+      <LoggerRootDirectory>E:\Semester 4\elite\XNAClient\gameClient\gameClient\</LoggerRootDirectory>
+      <IntermediateDirectory>E:\Semester 4\elite\XNAClient\gameClient\gameClient\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>E:\Semester 4\elite\XNAClient\gameClient\gameClient\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2011-09-02T05:52:30+05:30</Value>
+        <Value>2011-09-01T16:22:30+05:30</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2011-09-02T05:52:30+05:30</Value>
+        <Value>2011-09-01T16:22:30+05:30</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2011-09-02T05:52:30+05:30</Value>
+        <Value>2011-09-01T16:22:30+05:30</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2011-09-02T05:52:30+05:30</Value>
+        <Value>2011-09-01T16:22:30+05:30</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2011-09-02T05:52:30+05:30</Value>
+        <Value>2011-09-01T16:22:30+05:30</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2011-09-02T05:52:30+05:30</Value>
+        <Value>2011-09-01T16:22:30+05:30</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-11-12T22:41:09.2771651+05:30</Value>
+        <Value>2015-11-13T12:22:00.2451912+05:30</Value>
       </Assembly>
     </Assemblies>
   </Asset>
