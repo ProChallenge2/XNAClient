@@ -65,7 +65,7 @@ namespace gameClient
             gE.sendJoinMessage();
             Thread t1 = new Thread(new ThreadStart(gE.getUpdates));
             t1.Start();
-            //Paser.send_updates();
+            Paser.send_updates();
             setMatrix(gE.getMap());
 
 
@@ -90,9 +90,7 @@ namespace gameClient
             Tile.Content = Content;
             t = new Texture2D(GraphicsDevice, 1, 1);
             t.SetData<Color>( new Color[] { Color.White }); // fill the texture with white
-            Console.WriteLine("uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
             map.generate(matrix, 50);
-            Console.WriteLine("uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
           
             // TODO: use this.Content to load your game content here
         }
@@ -121,10 +119,7 @@ namespace gameClient
 
             //gE.getUpdates();
             setMatrix(gE.getMap());
-
-            Console.WriteLine("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
             map.generate(matrix, 50);
-            Console.WriteLine("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
 
             base.Update(gameTime);
         }

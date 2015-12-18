@@ -35,12 +35,12 @@ namespace gameClient.ServerConnection
         Timer server_update_timer;
         int update_interval = 1200;
         AI ai;
-        Commiunicator com = new Commiunicator();
+        //Commiunicator com = new Commiunicator();
         public bool state = false;
         public parser(map mp) {
             this.mp = mp;
             grid = mp.getGrid();
-            ai = new AI(grid);
+           // ai = new AI(grid);
         }
         public parser() 
         { }
@@ -129,22 +129,14 @@ namespace gameClient.ServerConnection
 
 
                 if (array[0] == "I")
-                {
-
-                    Console.WriteLine("1111111111111111111111111111111111111111111111111111111111111111111111");
-                   
-
+                {                  
                     mp.setBriksCordinates(array);
                     mp.setStoneCordinates(array);
                     mp.setwaterCordinates(array);
                     a = true;
-
-
                 }
                 else if (array[0] == "S")
                 {
-
-                    Console.WriteLine("22222222222222222222222222222222222222222222222222222222222222222");
                     String[] arrayNew = array[1].Split(';');
 
                     player.playerNumber = Int32.Parse(arrayNew[0].Substring(1));
@@ -275,12 +267,19 @@ namespace gameClient.ServerConnection
              }
              private void update_server_handler(object o, ElapsedEventArgs e)
              {
-                 Console.WriteLine("loaction x " + player.playerLocationX + " Location y " + player.playerLocationY);
-                 string s = ai.getNextMove(player.playerLocationX, player.playerLocationY);
-                 Console.WriteLine(s + "  //////////////###########");
-                 Commiunicator.sendData(s);
-                 Console.WriteLine("##############////////////////");
-
+                 try
+                 {
+                     ai = new AI(grid);
+                     Console.WriteLine("loaction x " + player.playerLocationX + " Location y " + player.playerLocationY);
+                     string s = ai.getNextMove(player.playerLocationX, player.playerLocationY);
+                     Console.WriteLine(s + "  //////////////###########");
+                     Commiunicator.sendData(s);
+                     Console.WriteLine("##############////////////////");
+                  }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("COULD NOT WRITE TO SERVER");
+                }
              }
     }
 }
